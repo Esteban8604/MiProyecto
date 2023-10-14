@@ -1,7 +1,7 @@
 import sys
 import os
-from src.images import showImageFromURL, downloadImageFromUrl, grayScaleImage
-from src.mymail import sendQuickMail, sendAttachEmail
+from src.ProyectoPython.images import showImageFromURL, downloadImageFromUrl, grayScaleImage
+from src.ProyectoPython.mymail import sendQuickMail, sendAttachEmail
 
 def main(args):
     imagen = "https://images.pexels.com/photos/13940670/pexels-photo-13940670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

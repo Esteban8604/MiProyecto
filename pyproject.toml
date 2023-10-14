@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "Pillow>=10.0.1", "requests==2.31.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "ProyectoPython"
+version = "0.0.6"
+description = "Primer proyecto del curso de python"
+authors = [
+    {name="Mario Montero Badilla", email="estebanmonba@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+[project.urls]
+"Homepage" = "https://github.com/Esteban8604/MiProyecto"

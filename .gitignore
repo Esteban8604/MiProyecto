@@ -1,2 +1,5 @@
 env/
 */__pycache__
+dist/
+src/ProyectoPython.egg-info
+.pypirc
