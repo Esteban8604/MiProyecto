@@ -26,6 +26,8 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
+master_doc = 'index'
+
 language = 'es'
 
 # -- Options for HTML output -------------------------------------------------
