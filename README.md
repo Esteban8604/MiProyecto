@@ -1,12 +1,26 @@
 # ProyectoPython
 Hola, bienvenido a mi biblioteca de python
 
-## bibliotecas:
-* images.py
-* mymail.py
+# Instalación
+Esta sección muestra como instalar el paquete **ProyectoPython**
+
+Para instalar el paquete es necesario crear un entorno virtual:
+```terminal
+python -m venv venv
+env\scripts\activate
+pip install -r requirements.txt
+```
+Para utilizarlo solo debe importar las funciones al inicio de su módulo
+```python
+from ProyectoPython.images import showImageFromURL
+from ProyectoPython.images import downloadImageFromUrl
+from ProyectoPython.images import grayScaleImage
+
+from ProyectoPython.mymail import sendAttachEmail
+from ProyectoPython.mymail import sendQuickMail
+```
 
 ## Funciones en images.py
-
 * #### showImageFromURL
 ###### muestra y descarga una imagen desde una url.
 * #### downloadImageFromUrl
@@ -19,6 +33,11 @@ Hola, bienvenido a mi biblioteca de python
 ###### Envia un correo rapido.
 * sendAttachEmail
 ###### Envia un correo con un archivo adjunto
+
+## Referencias
+Para ver el codigo fuente vaya a el repositorio de [Github](https://github.com/Esteban8604/MiProyecto)
+
+Para ver la biblioteca vaya a [Testpypi](https://test.pypi.org/project/ProyectoPython/)
 
 | Lenguaje | %   |
 |----------| --- |

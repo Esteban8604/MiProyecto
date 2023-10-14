@@ -4,6 +4,7 @@ import uuid
 
 def main():
     """Inicializador del codigo.
+
     """
     valor = input("Para descargar una imagen y mostrarla, digite 1.\n"
                   "Para descargar una imagen y guardarla en una ruta indicada, digite 2.\n"
@@ -26,8 +27,10 @@ def main():
 
 def showImageFromURL(url):
     """Descarga una imagen desde una URL y la muestra.
+
         Args:
-            url (str): URL que se usara para descargar la imagen.
+        ^^^^^
+            :url (str): URL que se usara para descargar la imagen.
     """
     respuesta = requests.get(url)
     nombre_archivo = f"{uuid.uuid4().hex}.jpg"
@@ -40,9 +43,13 @@ def showImageFromURL(url):
 
 def downloadImageFromUrl(url, path):
     """Descarga una imagen y la guarda en la ruta indicada.
+
         Args:
-            url (str): URL que se usara para descargar la imagen.
-            path (str): ruta en la que desea descargar la imagen.
+        ^^^^^
+            :url (str): URL que se usara para descargar la imagen.
+
+            :path (str): ruta en la que desea descargar la imagen.
+
     """
     respuesta = requests.get(url)
     with open(path, "wb") as file:
@@ -52,8 +59,10 @@ def downloadImageFromUrl(url, path):
 
 def grayScaleImage(path):
     """Convierte una imagen a blanco y negro.
+
         Args:
-            path (str): Nombre de la imagen a convertir.
+        ^^^^^
+            :path (str): Nombre de la imagen a convertir.
     """
     imagen = Image.open(path)
     grayscale_image = imagen.convert("L")

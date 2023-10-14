@@ -22,10 +22,15 @@ def main():
     
 def sendQuickMail(subject:str, message:str, destination:str):
     """Envía un correo electrónico rápido al destino indicado.
+
         Args:
-            subject (str): Asunto del correo electronico
-            message (str): Mensaje que se enviara en el correo
-            destination (str): direccion a la cual se enviara el correo
+        ^^^^^
+            :subject (str): Asunto del correo electronico
+
+            :message (str): Mensaje que se enviara en el correo
+
+            :destination (str): direccion a la cual se enviara el correo
+
     """
 
     mail = input(str("Ingrese su correo electronico: "))
@@ -44,11 +49,17 @@ def sendQuickMail(subject:str, message:str, destination:str):
 
 def sendAttachEmail(subject:str, message:str, destination:str, path:str):
     """Envía un correo electrónico con un archivo adjunto a la dirección indicada.
+
         Args:
-            subject (str): Asunto del correo electronico
-            message (str): Mensaje que se enviara en el correo
-            destination (str): direccion a la cual se enviara el correo
-            path (str): Direccion del archivo que se enviara en el correo
+        ^^^^^
+            :subject (str): Asunto del correo electronico
+
+            :message (str): Mensaje que se enviara en el correo
+
+            :destination (str): direccion a la cual se enviara el correo
+
+            :path (str): Direccion del archivo que se enviara en el correo
+
     """
     mail = input(str("Ingrese su correo electronico: "))
     password = input(str("Ingrese su contraseña: "))
@@ -82,11 +93,17 @@ def sendAttachEmail(subject:str, message:str, destination:str, path:str):
 
 def enviar_correo(mail:str, password:str, message:str, destination:str):
     """Envia un correo electronico
+
         Args:
-            mail (str): Correo con el que se iniciara sesion.
-            password (str): Contraseña para ingresar al correo previamente solicitado
-            message (str): El mensaje que se enviara en el correo
-            destination (str): direccion a la cual se enviara el correo
+        ^^^^^
+            :mail (str): Correo con el que se iniciara sesion.
+
+            :password (str): Contraseña para ingresar al correo previamente solicitado
+
+            :message (str): El mensaje que se enviara en el correo
+
+            :destination (str): direccion a la cual se enviara el correo
+
             """
     context = ssl.create_default_context()
     try:

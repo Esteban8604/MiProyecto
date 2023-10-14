@@ -3,3 +3,7 @@ env/
 dist/
 src/ProyectoPython.egg-info
 .pypirc
+docs/build/*
+
+
+!docs/build/index.txt
