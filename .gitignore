@@ -5,5 +5,5 @@ src/ProyectoPython.egg-info
 .pypirc
 docs/build/*
 
-
+*.pyc
 !docs/build/index.txt
