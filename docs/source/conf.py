@@ -8,11 +8,11 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../../src/") )
+sys.path.insert(0, os.path.abspath("../../src/tests") )
 project = 'ProyectoPython'
 copyright = '2023, Mario Montero Badilla'
 author = 'Mario Montero Badilla'
-release = '0.0.6'
+release = '0.1.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

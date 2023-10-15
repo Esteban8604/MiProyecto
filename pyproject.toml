@@ -3,7 +3,7 @@ requires = ["setuptools", "Pillow>=10.0.1", "requests==2.31.0"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "ProyectoPython"
-version = "0.1.0"
+version = "0.1.1"
 description = "Primer proyecto del curso de python"
 authors = [
     {name="Mario Montero Badilla", email="estebanmonba@gmail.com"}
