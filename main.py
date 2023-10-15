@@ -25,5 +25,7 @@ def main(args):
         os.remove("imagen1.jpg")
 
 
+
+
 if __name__ == "__main__":
     main(sys.argv)

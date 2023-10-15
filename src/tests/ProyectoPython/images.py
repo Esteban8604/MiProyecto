@@ -31,13 +31,18 @@ def showImageFromURL(url):
         Args:
         ^^^^^
             :url (str): URL que se usara para descargar la imagen.
+
+        Returns:
+        ^^^^^^^^
+            :Nombre_archivo (str): Nombre de la imagen que se descargó.
     """
     respuesta = requests.get(url)
-    nombre_archivo = f"{uuid.uuid4().hex}.jpg"
+    nombre_archivo = "imagedownload.jpg"
     with open(nombre_archivo, mode="wb") as imagen:
         imagen.write(respuesta.content)
     imagen_descargada = Image.open(nombre_archivo)
     imagen_descargada.show()
+    return nombre_archivo
 
 
 
@@ -63,10 +68,17 @@ def grayScaleImage(path):
         Args:
         ^^^^^
             :path (str): Nombre de la imagen a convertir.
+
+        Returns:
+        ^^^^^^^^
+            :Name (str): Nombre de la imagen en blanco y negro
     """
+    name = "grayscaleimage.jpg"
     imagen = Image.open(path)
     grayscale_image = imagen.convert("L")
-    grayscale_image.save(path)
+    grayscale_image.save(name)
+
+    return name
 
 
 
